@@ -75,14 +75,14 @@ def main():
 
     point_history_classifier = PointHistoryClassifier()
 
-    with open('model/keypoint_classifier/keypoint_classifier_label.csv',
+    with open('/home/deadsoul/Gesturepro/final-working/model/keypoint_classifier/keypoint_classifier_label.csv',
               encoding='utf-8-sig') as f:
         keypoint_classifier_labels = csv.reader(f)
         keypoint_classifier_labels = [
             row[0] for row in keypoint_classifier_labels
         ]
     with open(
-            'model/point_history_classifier/point_history_classifier_label.csv',
+            '/home/deadsoul/Gesturepro/final-working/model/point_history_classifier/point_history_classifier_label.csv',
             encoding='utf-8-sig') as f:
         point_history_classifier_labels = csv.reader(f)
         point_history_classifier_labels = [
